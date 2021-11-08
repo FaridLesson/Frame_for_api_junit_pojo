@@ -13,6 +13,6 @@ import java.time.LocalDateTime;
 public class CreateUserResponse extends UserRequest{
     private int id;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh:mm:ss.SSSZ")//переводим в Стринг и задем формат времени
-    @JsonDeserialize(using = DataDeserializer.class)
+    @JsonDeserialize(using = DataDeserializer.class)  //указываем класс для десирилизации
     private LocalDateTime createdAt;//тут будет наше время создания
 }

@@ -11,7 +11,7 @@ public abstract class RestService {
     protected Cookies cookies;
     protected RequestSpecification REQ_SPEC;
 
-    protected abstract String getBasePath();
+    protected abstract String getBasePath();        //абстрактный метод базового пути
 
     public RestService(Cookies cookies){
         this.cookies = cookies;

@@ -10,7 +10,7 @@ import pojos.UserPojoFull;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
-
+//переносим логику создания пользователя и получение в отдельный класс (используем этот подход)
 public class UserService extends RestService {
     @Override
     protected String getBasePath() {

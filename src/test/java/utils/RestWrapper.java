@@ -22,9 +22,8 @@ public class RestWrapper {
         this.cookies = cookies;
         user = new UserService(cookies);
         order = new OrderService(cookies);
-
     }
-    //авторизация логин
+    //авторизация логика логина
     public static RestWrapper loginAs(String login, String password){
         Cookies cookies = given()
                 .contentType(ContentType.JSON)

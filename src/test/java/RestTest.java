@@ -32,7 +32,7 @@ public class RestTest {
 
     }
 
-    //Эгземпляр класса который рпедставляет json
+    //Эгземпляр класса который представляет json
     //создаем клиента
     @Description("Проверяет отправку запроса, для создания клиента с указанными тестовыми данными")
     @DisplayName("Создание пользователя")
@@ -46,7 +46,7 @@ public class RestTest {
         assertThat(rs)
                 .isNotNull()
                 .extracting(CreateUserResponse::getJob)
-                .isEqualTo(rq.getJob());
+                .isEqualTo(rq.getJob());  //проверяем что имя соответствует мени в запросе
 
     }
 }

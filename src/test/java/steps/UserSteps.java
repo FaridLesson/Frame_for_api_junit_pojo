@@ -10,10 +10,10 @@ import pojos.UserRequest;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
-
+//Данный подход можно использовать, но он менее гибкий
 public class UserSteps {
     /*
-    перенесли тестовые данные в шаги
+    перенесли тестовые спецификации
      */
     private static final RequestSpecification REQ_SPEC =
             new RequestSpecBuilder()
